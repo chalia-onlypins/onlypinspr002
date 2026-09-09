@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>og 카드 — 워드로브</title>
+<style>
+  /* 아트보드 1200x630. _og렌더.cjs 가 캡처한다. 페이지와 같은 톤(차콜·세리프·골드). */
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{
+    width:1200px; height:630px; overflow:hidden; position:relative;
+    background:#12100e; color:#f5f1ea;
+    font-family:"Pretendard",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    word-break:keep-all;
+  }
+  .serif{font-family:'NotoSerifKR',Garamond,Georgia,"Times New Roman","Batang",serif; font-weight:400}
+  .en{font-family:'Playfair',Georgia,"Times New Roman",serif; letter-spacing:.36em; text-transform:uppercase}
+  .gold{color:#b8a179}
+
+  .board{display:flex; height:100%; padding:62px 70px; gap:56px}
+  .left{flex:1; display:flex; flex-direction:column}
+
+  .top{display:flex; align-items:center; gap:11px; margin-bottom:auto}
+  .top img{width:34px; height:34px; border-radius:9px; display:block; opacity:.92}
+  .top .bn{font-size:16px; color:rgba(245,241,234,.72); letter-spacing:-.02em}
+  .top .dv{width:1px; height:13px; background:rgba(245,241,234,.2)}
+  .top .ct{font-size:12px}
+
+  .kick{font-size:12px; margin-bottom:26px}
+  h1{font-size:58px; line-height:1.24; letter-spacing:-.025em}
+  h1 em{font-style:italic}
+  .sub{margin-top:26px; font-size:17px; line-height:1.75; color:rgba(245,241,234,.66); max-width:26em}
+
+  .figs{display:flex; margin-top:auto; border-top:1px solid rgba(245,241,234,.16)}
+  .fig{flex:1; padding:20px 0 0; border-right:1px solid rgba(245,241,234,.16)}
+  .fig:last-child{border-right:0}
+  .fig .v{font-size:34px; line-height:1; letter-spacing:-.03em}
+  .fig .l{font-size:12px; color:#9c9289; margin-top:8px}
+
+  .right{
+    flex:none; width:290px; border-left:1px solid rgba(245,241,234,.16);
+    padding-left:34px; display:flex; flex-direction:column; justify-content:center; gap:14px;
+  }
+  .br{font-size:23px; letter-spacing:-.03em; line-height:1}
+  .br.d{font-size:17px; color:rgba(245,241,234,.5)}
+  .rl{font-size:11px; color:#b8a179; margin-bottom:6px}
+
+  .line{
+    position:absolute; left:0; right:0; bottom:0; height:1px;
+    background:linear-gradient(90deg,transparent,#b8a179 42%,transparent); opacity:.55;
+  }
+</style>
+</head>
+<body>
+  <div class="board">
+    <div class="left">
+      <div class="top">
+        <img src="{{LOGO}}" alt="">
+        <span class="bn">온리핀스</span>
+        <span class="dv"></span>
+        <span class="ct en gold">Wardrobe</span>
+      </div>
+
+      <div class="kick en gold">Bags · Shoes · Accessories</div>
+      <h1 class="serif">옷장에 들일 것은<br><em class="gold">천천히</em> 고릅니다</h1>
+      <p class="sub">프라다와 구찌, 에르메스와 셀린느.<br>나이키와 뉴발란스도 같은 자리에 있습니다.</p>
+
+      <div class="figs">
+        <div class="fig"><div class="v serif">802</div><div class="l">가방</div></div>
+        <div class="fig"><div class="v serif">509</div><div class="l">신발</div></div>
+        <div class="fig"><div class="v serif">197</div><div class="l">패션 · 잡화</div></div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="rl en">Brands</div>
+      <div class="br serif">프라다</div>
+      <div class="br serif">스톤아일랜드</div>
+      <div class="br serif">구찌</div>
+      <div class="br serif">셀린느</div>
+      <div class="br serif">미우미우</div>
+      <div class="br serif">에르메스</div>
+      <div class="br d serif">디올 · 버버리 · 샤넬</div>
+      <div class="br d serif">보테가베네타 · 톰포드</div>
+    </div>
+  </div>
+  <div class="line"></div>
+</body>
+</html>
